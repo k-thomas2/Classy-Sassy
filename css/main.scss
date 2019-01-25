@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans+Condensed:300');
 $colors:(
     primary:  #882D60,
     primary-light: lighten(#882D60, 40%),
@@ -85,8 +85,8 @@ main{
 
                 span{
                     position: absolute;
-                    width: 30px;
-                    height: 30px;
+                    width: 25px;
+                    height: 25px;
                     background-color: color(primary-light);
                     border-radius: 50%;
                     margin-right: 10px;
@@ -95,6 +95,8 @@ main{
                     display: inline-block;
                     margin-left: max(40px);
                     margin-top: 10px;
+                    font-family: 'Open Sans Condensed', sans-serif;
+                    font-size: 1.2em;
                 }
             }
         }
@@ -118,7 +120,7 @@ main{
             @include desktop{
                 width: 30%;
                 font-size: 4em;
-                line-height: .9em;
+                line-height: .75em;
             }
         }
 
@@ -131,12 +133,14 @@ main{
             border-radius: $borders;
             text-decoration: none;
             text-transform: uppercase;
-            font-weight: bold;
+            font-weight: bolder;
             background-color: color(accent);
             display: block;
             text-align: center;
             margin: 50px auto 0 auto;
             padding: $padding;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 1.3em;
 
             @include desktop{
                 display: inline-block;
